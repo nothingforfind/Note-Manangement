@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.notemanagement.ManagementController">
+    <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#saveData" text="Exit"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+        </Menu>
+    </MenuBar>
+    <Label layoutX="168.0" layoutY="39.0" text="Note Management">
+        <font>
+            <Font name="System Bold" size="28.0"/>
+        </font>
+    </Label>
+    <Label layoutX="43.0" layoutY="110.0" text="Note List"/>
+    <ListView fx:id="lvNote" layoutX="15.0" layoutY="134.0" onMouseClicked="#selectedItemClick" prefHeight="267.0"
+              prefWidth="104.0"/>
+    <Label layoutX="133.0" layoutY="110.0" text="Title:"/>
+    <TextField fx:id="tfTitle" editable="false" layoutX="169.0" layoutY="106.0" prefHeight="25.0" prefWidth="203.0"/>
+    <Label layoutX="388.0" layoutY="110.0" text="Date:"/>
+    <TextField fx:id="tfDate" editable="false" layoutX="431.0" layoutY="106.0" prefHeight="25.0" prefWidth="154.0"/>
+    <Label layoutX="327.0" layoutY="146.0" text="Context"/>
+    <TextArea fx:id="taContext" editable="false" layoutX="133.0" layoutY="170.0" prefHeight="232.0" prefWidth="453.0"/>
+    <Button fx:id="btnNew" layoutX="115.0" layoutY="417.0" mnemonicParsing="false" onAction="#newNote" prefHeight="39.0"
+            prefWidth="80.0" text="New"/>
+    <Button fx:id="btnEdit" disable="true" layoutX="212.0" layoutY="417.0" mnemonicParsing="false" onAction="#editNote"
+            prefHeight="39.0" prefWidth="80.0" text="Edit"/>
+    <Button fx:id="btnUpdate" disable="true" layoutX="308.0" layoutY="417.0" mnemonicParsing="false"
+            onAction="#updateNote" prefHeight="39.0" prefWidth="80.0" text="Update"/>
+    <Button fx:id="btnRemove" disable="true" layoutX="406.0" layoutY="417.0" mnemonicParsing="false"
+            onAction="#removeNote" prefHeight="39.0" prefWidth="80.0" text="Delete"/>
+</AnchorPane>

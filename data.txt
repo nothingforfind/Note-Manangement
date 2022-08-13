@@ -1,0 +1,41 @@
+~~title~~
+My profile
+~~date~~
+08/12/2021 14:39:28
+~~context~~
+My name is Le Hoang Long.
+私は レ ホアン ロンです。
+
+This year, I'm 26 years old.
+今年26歳です。
+
+I came to Japan in 2018.
+２０１８年日本に来ました。
+
+I studied 2 years for Japanese.
+最初の二年間日本語を勉強しました。
+
+And in that time, I studied programing language, too.
+日本語を勉強しながら、プログラミング言語を勉強しました。
+
+Currently, I'm working repair laptop (replace hardware) at Alinks Company.
+現在アリンクス会社で働いています。
+
+I want improve my skill and work with my favorite job。
+プログラミング言語で働くのは私の夢の仕事です。スキルアップ欲しいです。
+
+Thank you so much for read my profile.
+本当にありがとうございます。
+~~title~~
+Welcome to my application
+~~date~~
+08/12/2021 21:44:19
+~~context~~
+I wrote this application when I passed JavaFX lesson.
+
+In this lesson:
+- I studied theard, multi thread, work with file,...
+- I'm interesting with Java and want to work with it.
+- In future, I want to my skill can be better more than...
+
+Thank you so much.
