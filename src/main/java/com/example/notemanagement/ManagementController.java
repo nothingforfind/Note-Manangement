@@ -18,11 +18,12 @@ public class ManagementController implements Initializable {
     public TextArea taContext;
     public TextField tfTitle;
     public TextField tfDate;
-    static List<Note> noteList = new ArrayList<>();
     public Button btnNew;
     public Button btnEdit;
     public Button btnUpdate;
     public Button btnRemove;
+    public List<Note> noteList = new ArrayList<>();
+
 
     /**
      * First, set title for List View
