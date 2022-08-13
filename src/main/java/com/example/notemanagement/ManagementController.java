@@ -23,8 +23,6 @@ public class ManagementController implements Initializable {
     public Button btnEdit;
     public Button btnUpdate;
     public Button btnRemove;
-    boolean setCellFactory = false;
-
 
     /**
      * First, set title for List View
@@ -207,21 +205,18 @@ public class ManagementController implements Initializable {
      */
     void setCellFactory() {
 
-        /*When setCellFactory variable is false, work this code and set true to that variable*/
-        if (!setCellFactory) {
-            lvNote.setCellFactory(param -> new ListCell<Note>() {
-                @Override
-                protected void updateItem(Note item, boolean empty) {
-                    super.updateItem(item, empty);
-                    if (empty || item == null || item.getTitle() == null) {
-                        setText(null);
-                    } else {
-                        setText(item.getTitle());
-                    }
+        /*Set cell factory by function of List View*/
+        lvNote.setCellFactory(param -> new ListCell<Note>() {
+            @Override
+            protected void updateItem(Note item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null || item.getTitle() == null) {
+                    setText(null);
+                } else {
+                    setText(item.getTitle());
                 }
-            });
-            setCellFactory = true;
-        }
+            }
+        });
     }
 
 

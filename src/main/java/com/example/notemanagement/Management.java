@@ -9,6 +9,7 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 
 public class Management extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("management-view.fxml"));

@@ -13,9 +13,7 @@ public class Note {
     /**
      * Contructor for add object read from file
      */
-    public Note() {
-
-    }
+    public Note() {}
 
 
     /**
